@@ -1,38 +1,302 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap');
+
+body{
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+nav{
+  background: rgb(255, 255, 255);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav img{
+  width: 70px;
+  margin-right: 10px;
+}
+.navbar-nav .nav-link{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+nav ul li span{
+  color: rgb(46, 64, 83);
+  font-size: 20px;
+  margin: 15px;
+}
+nav ul li span:hover{
+  border-bottom: 4px solid rgb(46, 64, 83);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.c-home{
+  width: 100%;
+  padding-top: 100px;
+  background: url('./views/recursos/image/bg.jpg');
+}
+.c-home .card{
+  margin: 20px;  
+  background: rgba(250, 250, 250, .8);
+}
+.c-home .card:hover{
+  box-shadow: 0px 0px 14px 1px rgba(255,255,255,0.7);
+  cursor: pointer;
+}
+.c-home .card img{
+  width: 100%;
+  height: 400px;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+/*Styles Vehicles Section*/
+.c-vehicle{
+  padding-top: 100px;
+  background: url('./views/recursos/image/bg-vehicle.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.c-vehicle a{
+  text-decoration: none;
+}
+.c-vehicle .title{
+  width: 100%;
+  color: rgb(255, 255, 255);
+  background: rgba(52, 73, 94, .7);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 20px;
+  border:4px solid rgb(52, 73, 94)
+}
+.c-vehicle .card{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid rgb(52, 73, 94);
+  
+}
+.c-vehicle .card:hover{
+  border: 1px solid rgb(255, 255, 255);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.c-vehicle .card .card-header{
+  border-radius: 2px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  background: rgba(52, 73, 94, .7);  
 }
+.c-vehicle .card .card-header:hover{
+  background: rgba(255,255,255, .5);
+  color: rgb(46, 64, 83);
+}
+.c-vehicle .card .card-img-top{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.c-vehicle .card .card-body{
+  background: rgba(46, 64, 83, .7);
+  color: #fff;
+}
+.c-vehicle .card .card-body p span{
+  margin-right: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.c-vehicle .card .card-body p{
+  border: 1px solid transparent;
+
+}
+.c-vehicle .card .card-body .card-text:hover{
+  background: rgba(250, 250, 250, 1);
+  border-radius: 5px;
+  color: #2E4053;
+  border: 1px solid rgba(52, 73, 94, .5);
+}
+.c-vehicle button{
+  background: rgba(46, 64, 83, .4);
+  border: 1px solid rgb(46, 64, 83, 1);
+  color: rgb(255,255,255) ;
+  font-weight: 600;
+}
+.c-vehicle button:hover{
+  background: rgba(255,255,255, .5);
+  color: rgb(46, 64, 83);
+  border: 1px solid rgba(255,255,255, 1);
+}
+/*End Vehicles Section*/
+
+
+/*Styles planets Section*/
+.c-planet{
+  width: 100%;
+  padding-top: 100px;
+  background: url('./views/recursos/image/bg-planet.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.c-planet a{
+  text-decoration: none;
+}
+.c-planet .title{
+  width: 100%;
+  color: rgb(255, 255, 255);
+  background: rgba(52, 73, 94, .7);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 20px;
+  border:4px solid rgb(52, 73, 94)
+}
+.c-planet .card{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid rgb(52, 73, 94);
+  
+}
+.c-planet .card:hover{
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.c-planet .card .card-header{
+  border-radius: 2px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  background: rgba(52, 73, 94, .7);  
+}
+.c-planet .card .card-header:hover{
+  background: rgba(255,255,255, .5);
+  color: rgb(46, 64, 83);
+}
+.c-planet .card .card-img-top{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.c-planet .card .card-body{
+  background: rgba(46, 64, 83, .2);
+  color: #fff;
+}
+.c-planet .card .card-body p span{
+  margin-right: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.c-planet .card .card-body p{
+  border: 1px solid transparent;
+
+}
+.c-planet .card .card-body p:hover{
+  background: rgba(250, 250, 250, 1);
+  border-radius: 5px;
+  color: #2E4053;
+  border: 1px solid rgba(52, 73, 94, .5);
+}
+.c-planet button{
+  background: rgba(46, 64, 83, .4);
+  border: 1px solid rgb(46, 64, 83, 1);
+  color: rgb(255,255,255) ;
+  font-weight: 600;
+}
+.c-planet button:hover{
+  background: rgba(255,255,255, .5);
+  color: rgb(46, 64, 83);
+  border: 1px solid rgba(255,255,255, 1);
+}
+/*End Plantes Section*/
+
+
+
+/*Styles People Section*/
+.c-people{
+  width: 100%;
+  padding-top: 100px;
+  background: url('./views/recursos/image/bg-people.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.c-people a{
+  text-decoration: none;
+}
+.c-people .title{
+  width: 100%;
+  background: rgba(255, 255, 255,.4);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 20px;
+  border:4px solid #fff
+}
+.c-people .card{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  background: transparent;
+  color: #2E4053 ;
+  cursor: pointer;
+  border: 1px solid #fff;
+  
+}
+.c-people .card:hover{
+  border: 1px solid #34495E;
+}
+
+.c-people .card .card-header{
+  border-radius: 2px;
+  font-size: 20px;
+  color: rgb(46, 64, 83);
+  font-weight: 400;
+  background: rgba(250, 250, 250, .7);
+  border: 1px solid #fff;  
+}
+.c-people .card .card-header:hover{
+  background: rgba(46, 64, 83, .5);
+  color: rgb(255, 255, 255);
+  border: 1px solid #34495E;
+}
+.c-people .card .card-img-top{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.c-people .card .card-body{
+  background: rgba(250, 250, 250, .7);
+  border: 1px solid #fff; 
+}
+.c-people .card .card-body p span{
+  margin-right: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2E4053 ;
+}
+.c-people .card .card-body p{
+  border: 1px solid transparent;
+
+}
+.c-people .card .card-body p:hover{
+  background: rgba(250, 250, 250, 1);
+  border-radius: 5px;
+  border: 1px solid rgba(52, 73, 94, .5);
+}
+.c-people button{
+  background: rgba(250, 250, 250, .7);
+  border: 1px solid #fff;
+  color: #2E4053 ;
+  font-weight: 600;
+}
+.c-people button:hover{
+  background: rgba(46, 64, 83, .5);
+  color: rgb(255, 255, 255);
+}
+/*End People Section*/
